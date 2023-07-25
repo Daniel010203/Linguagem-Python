@@ -5,7 +5,7 @@
 nomeCliente=input("Digite o nome do cliente: ")
 categoria='OURO','PRATA','BRONZE'
 tipoDePacotes='Completo','Especifico','Básico'
-valoresPacotes=int(100),(70),(40)
+valorespacotes=int(100),(70),(40)
 nomeCategoriaCliente=input("Digite a categoria do cliente: ")
 estadoDeLocalizacaoAcademia=input("Digite em qual Oliveiras Fit o(a) cliente está: ")
 valorPacoteContratado=int(input("Digite qual o valor do pacote contratado pelo cliente: "))
