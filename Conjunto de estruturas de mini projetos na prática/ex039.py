@@ -1,4 +1,3 @@
-#EXERCICIO DE PROGRAMA IDENTIFICAR SE O JOVEM ESTÁ EM PERÍODO DE ALISTAMENTO MILITAR.
 # faça um programa que leia o ano do nascimento de um jovem e informe,de acordo com sua idade:
 # Se ele ainda vai se alistar no serviço militar:
 # Se é a hora dele se alistar:
@@ -14,4 +13,4 @@ if idade == 18:
 elif idade > 18:
     print("Vocé já deveria ter se alistado.")
 elif idade < 18:
-    print("Ainda falta {} anos para seu alistamento militar"
+    print("Ainda falta {} anos para seu alistamento militar")
