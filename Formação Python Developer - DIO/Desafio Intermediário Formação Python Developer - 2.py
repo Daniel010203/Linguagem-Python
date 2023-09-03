@@ -1,23 +1,20 @@
-# Recebe o número de casos de teste
+# Função para calcular o número de garrafas no segundo dia
+def calcular_garrafas_segundo_dia(N, K):
+    garrafas = N  # Inicialmente, o cliente tem N garrafas
+
+    while N >= K:
+        trocas = N // K  # Calcula o número de trocas possíveis
+        garrafas += trocas  # Adiciona as garrafas obtidas nas trocas
+        N = trocas + (N % K)  # Atualiza o número de garrafas vazias
+
+    return garrafas
+
+# Leitura do número de casos de teste
 T = int(input())
 
-# Loop pelos casos de teste
+# Processamento e saída para cada caso de teste
 for _ in range(T):
-    # Recebe N (número de refrigerantes comprados) e K (número de garrafas vazias para ganhar uma cheia)
-    K, N = map(int, input().split())
+    N, K = map(int, input().split())
+    resultado = calcular_garrafas_segundo_dia(N, K)
+    print(resultado)
 
-    # Calcula o número de garrafas no primeiro dia
-    garrafas_primeiro_dia = N
-    # Calcula o número de garrafas no segundo dia
-    garrafas_segundo_dia = N
-
-    while garrafas_primeiro_dia >= K:
-        # Calcula quantas garrafas vazias podem ser trocadas por cheias
-        trocas = garrafas_primeiro_dia // K
-        # Atualiza o número de garrafas no primeiro dia após as trocas
-        garrafas_primeiro_dia = trocas + (garrafas_primeiro_dia % K)
-        # Adiciona as garrafas ganhas ao total do segundo dia
-        garrafas_segundo_dia += trocas
-
-    # Imprime o número de garrafas no segundo dia
-    print(garrafas_segundo_dia)
