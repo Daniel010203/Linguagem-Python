@@ -1,0 +1,16 @@
+saldo = 200
+saque = 200
+
+print(saldo == saque)
+print(saldo != saque)
+print(saldo > saque)
+print(saldo >= saque)
+print(saldo < saque)
+print(saldo <= saque)
+
+#CÓDIGO explicado.
+saldo = 200
+saque = 300
+print( saldo != saque)
+
+#O código selecionado atribui o valor 200 à variável `saldo`, atribui o valor 300 à variável `saque`, e em seguida imprime o resultado da comparação `saldo != saque`. Aqui está uma explicação passo a passo do código: 1. `saldo = 200` - Esta linha atribui o valor 200 à variável `saldo`. 2. `saque = 300` - Esta linha atribui o valor 300 à variável `saque`. 3. `print( saldo != saque)` - Esta linha imprime o resultado da comparação `saldo != saque`. O operador `!=` verifica se os valores de `saldo` e `saque` não são iguais. Neste caso, como `saldo` é 200 e `saque` é 300, o resultado da comparação é `True`, e será impresso como `True`.
