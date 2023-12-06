@@ -1,0 +1,36 @@
+saldo = 300
+saldo +=200
+print(saldo)
+#O código selecionado inicializa uma variável `saldo` com valor 300, adiciona 200 a ela e então imprime o valor atualizado de `saldo`.  Aqui está uma explicação passo a passo do código: 1. `saldo = 300` - Esta linha atribui o valor 300 à variável `saldo`. 2. `saldo += 200` - Esta linha adiciona 200 ao valor atual de `saldo` usando o operador `+=`. É equivalente a `saldo = saldo + 200`. 3. `print(saldo)` - Esta linha imprime o valor de `saldo` no console. Neste caso, imprimirá `500`, que é o valor atualizado de `saldo` após adicionar 200 a ele.
+
+saldo = 300
+saldo -=200
+print(saldo)
+#O código selecionado subtrai 200 da variável `saldo` e depois imprime o valor atualizado. Aqui está uma explicação passo a passo do código: 1. `saldo = 300` - Esta linha atribui o valor 300 à variável `saldo`. 2. `saldo -= 200` - Esta linha subtrai 200 do valor atual de `saldo` usando o operador `-=`. É equivalente a `saldo = saldo - 200`. 3. `print(saldo)` - Esta linha imprime o valor atualizado de `saldo` após subtrair 200.
+
+saldo = 300
+saldo *=200
+print(saldo)
+#O código selecionado multiplica o valor da variável `saldo` por 200 e depois imprime o resultado. Aqui está uma explicação passo a passo do código: 1. `saldo = 300` - Esta linha atribui o valor 300 à variável `saldo`. 2. `saldo *= 200` - Esta linha multiplica o valor de `saldo` por 200 e atribui o resultado de volta a `saldo`. Esta é uma notação abreviada para `saldo = saldo * 200`. 3. `print(saldo)` - Esta linha imprime o valor de `saldo` no console. A saída será o resultado da multiplicação, que é 60.000.
+
+Podemos utilizar os operadores de atribuição diretamente no print,caso o valor da variável seja fixo.
+saldo += 10
+print(saldo)
+
+saldo -= 5
+print(saldo)
+
+saldo //= 2
+print(saldo)
+
+saldo /= 2
+print(saldo)
+
+saldo *= 10
+print(saldo)
+
+saldo %= 4
+print(saldo)
+
+saldo **= 2
+print(saldo)
