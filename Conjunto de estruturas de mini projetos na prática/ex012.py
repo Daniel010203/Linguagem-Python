@@ -17,6 +17,7 @@ Outra forma:
 valorProduto = float(input("Digite o valor do produto: "))
 novoValorProduto =  valorProduto - (valorProduto * 5/100)
 print(" O valor do produto com os %5 de desconto derá de R${:.2f}.".format(novoValorProduto))
+
 Esse código solicita ao usuário que digite o valor de um produto. Em seguida, converte esse valor para um número decimal (float) usando a função `float()`. 
 Depois, o código calcula o valor do desconto aplicando uma taxa de 5% sobre o valor do produto. Isso é feito multiplicando o valor do produto por 5/100.
 Por fim, o código imprime na tela o valor do produto com o desconto aplicado, formatando-o para exibir apenas duas casas decimais usando a função `format()`.
