@@ -1,0 +1,105 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPoxwb7Rrl2wGBciKY5Khdd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Auggustto/Criando_API_com_Flask/blob/main/Criando_uma_API_com_Flask_no_Ambiente_COLAB.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install flask\n",
+        "!pip install flask-ngrok\n",
+        "!pip install fastapi nest-asyncio pyngrok unicorn"
+      ],
+      "metadata": {
+        "id": "VzDxuBzTj3Zk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from fastapi import FastAPI\n",
+        "import nest_asyncio\n",
+        "from pyngrok import ngrok\n",
+        "import uvicorn\n",
+        "\n",
+        "\n",
+        "app = FastAPI()\n",
+        "\n",
+        "@app.get('/index')\n",
+        "async def home():\n",
+        "  return [\n",
+        "    {\n",
+        "        \"number\": 1,\n",
+        "        \"name\": \"Mahesh\",\n",
+        "        \"age\": 25,\n",
+        "        \"city\": \"Bangalore\",\n",
+        "        \"country\": \"India\",\n",
+        "    },\n",
+        "    {\n",
+        "        \"number\": \"2\",\n",
+        "        \"name\": \"Alex\",\n",
+        "        \"age\": 26,\n",
+        "        \"city\": \"London\",\n",
+        "        \"country\": \"UK\",\n",
+        "    },\n",
+        "    {\n",
+        "        \"number\": \"3\",\n",
+        "        \"name\": \"David\",\n",
+        "        \"age\": 27,\n",
+        "        \"city\": \"San Francisco\",\n",
+        "        \"country\": \"USA\",\n",
+        "    },\n",
+        "    {\n",
+        "        \"number\": \"4\",\n",
+        "        \"name\": \"John\",\n",
+        "        \"age\": 28,\n",
+        "        \"city\": \"Toronto\",\n",
+        "        \"country\": \"Canada\",\n",
+        "    },\n",
+        "    {\n",
+        "        \"number\": \"5\",\n",
+        "        \"name\": \"Chris\",\n",
+        "        \"age\": 29,\n",
+        "        \"city\": \"Paris\",\n",
+        "        \"country\": \"France\",\n",
+        "    }\n",
+        "]\n",
+        "\n",
+        "ngrok_tunnel = ngrok.connect(8000)\n",
+        "print(\"Public URL:\", ngrok_tunnel.public_url)\n",
+        "nest_asyncio.apply()\n",
+        "uvicorn.run(app, port=8000)"
+      ],
+      "metadata": {
+        "id": "M-1xysOCrfrx"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
