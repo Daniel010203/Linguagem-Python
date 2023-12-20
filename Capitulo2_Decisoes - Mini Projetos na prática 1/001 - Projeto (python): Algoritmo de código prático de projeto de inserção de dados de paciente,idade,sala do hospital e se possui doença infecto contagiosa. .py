@@ -1,4 +1,4 @@
-#Exercicio de código prático de projeto de código de inserção de dados de paciente,idade,sala do hospital e se possui doença infecto contagiosa.
+Algoritmo de projeto de código de inserção de dados de paciente,idade,sala do hospital e se possui doença infecto contagiosa.
 
 nome=input("Digite o nome: ")
 idade=int(input("Digite a idade: "))
