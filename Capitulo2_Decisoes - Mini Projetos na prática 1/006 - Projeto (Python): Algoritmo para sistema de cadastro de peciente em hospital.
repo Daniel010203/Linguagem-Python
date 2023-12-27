@@ -1,0 +1,24 @@
+nome = input ("Informe o nome :")
+idade = int(input("Informe a idade: "))
+doenca_Infecontagiosa = input("Pussui doença infectocontagiosa ? ").upper()
+
+if doenca_Infecontagiosa =="SIM":
+    print("Encaminhe o paciente para a sala amarela")
+elif doenca_Infecontagiosa == "NÃO":
+    print("Encaminhe o paciente para a sala branca")
+else:
+    print("Responda ao questionário de doença infectocontagiosa com SIM ou NÃO.")
+
+if idade >= 65:
+    print("Paciente com prioridade.")
+else:
+    genero = input("Digite o genero do paciente: ").upper()
+    if genero =="FEMININO" and idade >=10:
+        gravidez = input("A paciente está grávida ?").upper()
+        if gravidez =="SIM":
+            print("Paciente com prioridade")
+        else:
+            print("Paciente sem prioridade")
+    else:
+       print("Paciente sem prioridade.")
+print("Resposta ao questionário da idade do paciente.")
