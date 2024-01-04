@@ -1,0 +1,15 @@
+carro_Alugado = input("Digite o nome do carro que deseja alugar: ")
+qtd_Dias_Alug = int(input("Digite a quantidade de dias que o veiculo ficou alugado: "))
+qtd_kmRodados = float(input("Digite a quantidade de km rodados enquanto o veiculo estava alugado: "))
+custo_Aluguel_Veiculo = float(60.00)
+custo_Km_Rodado = float(0.15)
+
+valor_aluguel_veiculo  = str(qtd_Dias_Alug * qtd_kmRodados)
+print("O vaiculo custou R$" + valor_aluguel_veiculo + " pelo serviço contratado.")
+
+Explicação do código :
+O trecho de código é um programa Python simples que calcula o custo do aluguel de um carro com base no número de dias e quilômetros rodados. Aqui está uma explicação passo a passo do código: 1. `carro_Alugado = input("Digite o nome do carro que deseja alugar: ")` - Esta linha solicita que o usuário digite o nome do carro que deseja alugar e armazena na variável `carro_Alugado`.
+2. `qtd_Dias_Alug = int(input("Digite a quantidade de dias que o veículo ficou alugado: "))` - Esta linha solicita que o usuário insira o número de dias que o carro foi alugado e converte a entrada para um número inteiro usando o Função `int()`. O valor é armazenado na variável `qtd_Dias_Alug`.
+3. `qtd_kmRodados = float(input("Digite a quantidade de km rodados enquanto o veículo estava alugado: "))` - Esta linha solicita que o usuário insira o número de quilômetros rodados enquanto o carro foi alugado e converte a entrada para um flutuar usando a função `float()`. O valor é armazenado na variável `qtd_kmRodados`.
+4. `custo_Aluguel_Veiculo = float(60,00)` - Esta linha define o custo do aluguel do carro em 60,00, assumindo que seja um custo fixo. O valor é armazenado na variável `custo_Aluguel_Veiculo`.
+5. `custo_Km_Rodado = float(0.15)` - Esta linha define o custo por quilômetro percorrido em 0,15, assumindo que é um custo fixo. O valor é armazenado na variável `custo_Km_Rodado`. 6. `valor_aluguel_veiculo = str(qtd_Dias_Alug * qtd_kmRodados)` - Esta linha calcula o custo total do aluguel do carro multiplicando o número de dias (`qtd_Dias_Alug`) pelo número de quilômetros rodados (`qtd_kmRodados`). O resultado é convertido para uma string através da função `str()` e armazenado na variável `valor_aluguel_veiculo`. 7. `print("O vaiculo custou R$" + valor_aluguel_veiculo + " pelo serviço contratado.")` - Esta linha imprime o custo total do aluguel do carro concatenando a string "O veículo custou R$" com o valor de ` valor_aluguel_veiculo` e a string "pelo serviço contratado."
