@@ -1,7 +1,0 @@
-#Quando usamos o import math o código importa todas as funcionalidades da função math.
-import math
-numero=int(input("Digite um numero: "))
-raiz = math.sqrt(numero)
-print("A raiz de {:.3f} é igual a {:.3f}".format(numero,raiz))
-
-# O código selecionado importa o módulo `math` e o utiliza para calcular a raiz quadrada de um número inserido pelo usuário. Aqui está uma explicação passo a passo do código: 1. `import math` - Esta linha importa o módulo `math`, que fornece funções matemáticas e constantes. 2. `numero=int(input("Digite um numero: "))` - Esta linha solicita que o usuário insira um número e o armazena na variável `numero`. A função `int()` é usada para converter a entrada do usuário em um número inteiro. 3. `raiz = math.sqrt(numero)` - Esta linha calcula a raiz quadrada do número armazenado em `numero` usando a função `sqrt()` do módulo `math`. O resultado é armazenado na variável `raiz`. 4. `print("A raiz de {:.3f} é igual a {:.3f}".format(numero,raiz))` - Esta linha imprime o resultado do cálculo da raiz quadrada. O método `format()` é usado para formatar a string de saída, com `{:.3f}` especificando que os números devem ser exibidos com três casas decimais. Os valores de `numero` e `raiz` são inseridos na string usando o método `format()`.
