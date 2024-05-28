@@ -1,9 +1,0 @@
-# Crie um algoritmo que leia um número e mostre seu sobro,triplo e a raiz quadrada na tela.
-# (\n) faz com que quebre a pagina.
-n = int(input("Digite um número: "))
-nd = n * 2
-nt = n * 3
-nq = n **(1/2)
-print(print("O número", n, " apresenta o ", nd, "como o dobro \n ", nt, "como o triplo e o \n", nq, "como a raiz quadrada"))
-
-# O código selecionado solicita que o usuário insira um número, realiza alguns cálculos nesse número e, em seguida, imprime os resultados. Aqui está uma explicação passo a passo do código: 1. `numero = int(input("Digite um número: "))` - Esta linha solicita que o usuário insira um número e o armazena na variável `numero`. A função `int()` é usada para converter a entrada do usuário em um número inteiro. 2. `nd = numero * 2` - Esta linha calcula o dobro do número inserido e o armazena na variável `nd`. 3. `nt = numero * 3` - Esta linha calcula o triplo do número inserido e o armazena na variável `nt`. 4. `nq = numero **(1/2)` - Esta linha calcula a raiz quadrada do número inserido e a armazena na variável `nq`. O operador `**` é usado para exponenciação. 5. `print("O numero ",numero, " apresenta o ",nd, "como o dobro \n ",nt, "como o triplo e o \n", nq, "como a raiz quadrada")` - Este line imprime o número inserido, sua raiz dupla, tripla e quadrada usando concatenação de strings. O caractere `\n` é usado para criar uma nova linha na saída.

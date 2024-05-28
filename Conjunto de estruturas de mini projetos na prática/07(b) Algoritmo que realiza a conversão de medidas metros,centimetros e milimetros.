@@ -1,5 +1,0 @@
-medida = int(input("Uma distancia em metros:"))
-cm = medida * 100
-mm = medida * 1000
-print("A media de ",medida," corresponde a ",cm,"cm e em",mm,"mm")
-
