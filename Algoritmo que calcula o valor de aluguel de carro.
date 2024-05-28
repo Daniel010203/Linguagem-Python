@@ -1,0 +1,21 @@
+diasAluguelCarro = int(input("Digite a quantidade de dias que o veiculo ficou alugado: "))
+valorContrato = float(input("Digite o valor do aluguel estipulado em do veiculo solicitado: "))
+valorAluguelveiculo = float(diasAluguelCarro * valorContrato)
+quantidadeDeKmRodados = float(input("Digite a quantidade de km rodados com o vaiculo alugado: "))
+valorCobradoKM = float(0.15)
+ValorTotalKm = float(quantidadeDeKmRodados * valorCobradoKM)
+valorTotalServicoAluguelVaiculo = float(valorAluguelveiculo + ValorTotalKm)
+print("O valor do serviço ficou em R${:.2f},".format(valorTotalServicoAluguelVaiculo))
+
+outra forma:
+
+dias = int(input('Quantos dias alugado? ')) 
+km = float(input('Quantos km rodados? '))
+pago = (dias * 60) + (km * 0.15)
+ 
+print(f'\033[34mO total a pagar é de: R${pago:.2f}\033[m')
+print('=-' * 16)
+
+
+
+O código selecionado é um script Python que calcula o custo total do aluguel de um carro com base no número de dias em que o carro foi alugado, na taxa de aluguel por dia e no número de quilômetros rodados. Aqui está uma explicação passo a passo do código: 1. `diasAluguelCarro = int(input("Digite a quantidade de dias que o veículo ficou fora: "))` - Esta linha solicita que o usuário insira o número de dias que o veículo carro foi alugado e armazena o input como um número inteiro na variável `diasAluguelCarro`. 2. `valorContrato = float(input("Digite o valor do aluguel estipulado em do veículo solicitado: "))` - Esta linha solicita ao usuário que insira a taxa de aluguel por dia e armazena a entrada como um float na variável `valorContrato `. 3. `valorAluguelveiculo = float(diasAluguelCarro * valorContrato)` - Esta linha calcula o custo total do aluguel multiplicando o número de dias alugados (`diasAluguelCarro`) pela taxa de aluguel por dia (`valorContrato`). O resultado é armazenado na variável `valorAluguelveiculo`. 4. `quantidadeDeKmRodados = float(input("Digite a quantidade de km rodados com o vaiculo oferecido: "))` - Esta linha solicita que o usuário insira o número de quilômetros rodados e armazena a entrada como um float na variável `quantidadeDeKmRodados `. 5. `valorCobradoKM = float(0.15)` - Esta linha define o custo por quilômetro rodado como 0,15 e armazena na variável `valorCobradoKM`. 6. `ValorTotalKm = float(quantidadeDeKmRodados * valorCobradoKM)` - Esta linha calcula o custo total dos quilômetros rodados multiplicando o número de quilômetros rodados (`quantidadeDeKmRodados`) pelo custo por quilômetro (`valorCobradoKM`). O resultado é armazenado na variável `ValorTotalKm`. 7. `valorTotalServicoAluguelVaiculo = float(valorAluguelveiculo + ValorTotalKm)` - Esta linha calcula o custo total do serviço de aluguer de automóveis somando o custo do aluguer (`valorAluguelveiculo`) e o custo dos quilómetros percorridos (`ValorTotalKm`). O resultado é armazenado na variável `valorTotalServicoAluguelVaiculo`. 8. `print("O valor do serviço ficou em R${:.2f},".format(valorTotalServicoAluguelVaiculo))` - Esta linha imprime o custo total do serviço de aluguel de carro no formato "O valor do serviço ficou em R$X.XX", onde X.XX representa o valor armazenado na variável `valorTotalServicoAluguelVaiculo`.
